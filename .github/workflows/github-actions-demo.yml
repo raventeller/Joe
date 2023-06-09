@@ -15,4 +15,5 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - run: sudo apt-get install -y ca-certificates curl
       - run: echo "🍏 This job's status is ${{ job.status }}."
